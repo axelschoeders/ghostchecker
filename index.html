@@ -44,7 +44,7 @@ footer{margin-top:28px;color:var(--muted);font-size:.9rem}
 <body>
 <main>
 <h1>GhostCheck</h1>
-<p class="lead">See what the public can find about your own username on Instagram, Snapchat and TikTok, then tighten each account with a short privacy checklist.</p>
+<p class="lead">See what the public can find about your own username on Instagram, Snapchat, TikTok and Facebook, then tighten each account with a short privacy checklist.</p>
 <div class="note">For checking your own accounts, or for a classroom exercise with a username you are allowed to use. Only publicly visible pages are opened, and nothing you type leaves this page.</div>
 
 <div class="row">
@@ -66,7 +66,9 @@ var P=[
 {n:"Snapchat",url:function(u){return "https://www.snapchat.com/add/"+u},
  tips:["Set “Who can contact me” and “Who can view my story” to Friends","Turn off “See me in Quick Add”","Keep Snap Map in Ghost Mode","Check which apps are connected to your account","Review your public profile and any Spotlight posts","Use a different username from your other apps"]},
 {n:"TikTok",url:function(u){return "https://www.tiktok.com/@"+u},
- tips:["Set the account to Private unless you want public reach","Limit who can comment, Duet and Stitch","Turn off “Suggest your account to others”","Check old videos for faces, school logos and street signs","Hide your liked videos","Use a different username from your other apps"]}
+ tips:["Set the account to Private unless you want public reach","Limit who can comment, Duet and Stitch","Turn off “Suggest your account to others”","Check old videos for faces, school logos and street signs","Hide your liked videos","Use a different username from your other apps"]},
+{n:"Facebook",url:function(u){return "https://www.facebook.com/"+u},
+ tips:["Set “Who can see your future posts” to Friends","Use “Limit past posts” to hide old public posts","Remove your phone number and email from About, or set them to Only me","Hide your friends list","Turn on review for posts and tags you appear in","Turn off search engines linking to your profile"]}
 ];
 function esc(s){return s.replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function build(){
